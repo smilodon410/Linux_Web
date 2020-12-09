@@ -8,6 +8,7 @@
   <packaging>war</packaging>
   
   <build>
+    <finalName>ServerPractice</finalName>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
       <plugin>
