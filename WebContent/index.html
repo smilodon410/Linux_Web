@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Hello HTML</title>
+</head>
+<body>
+	<h1>Hello, HTML</h1>
+	<p>이 페이지는 정적인 HTML입니다.</p>
+	<p>작성자: 대홍단감자</p>
+	<img src="./images/Supreme.png" 
+		alt="Supreme" title="Supreme"
+		width="500" height="300" />
+	
+	<br/>
+	<!-- 링크 -->
+	<a href="table.html">테이블 연습</a>
+	<br/>
+	<a href="UserForm.html">입력 폼 연습</a>
+	<br/>
+	<a href="hello.jsp?name=Hong">GET 파라미터 연습</a>
+	<br/>
+	<h3>HelloServlet 호출</h3>
+	<a href="/HelloWorld/hs?name=Servlet">Get 요청 Servlet 호출</a>
+	<br/>
+	<h3>HelloServlet Post 호출</h3>
+	<!-- action: 해당 폼을 처리할 수 있는 서블릿의 url
+		method: 데이터의 전송을 위한 방식(Get Or Post) -->
+	<form action="/HelloWorld/hs"
+		method="POST">
+		<label for="Last_name">성</label>
+		<input type="text"
+			name="Last_name"
+			id="Last_name"
+			placeholder="성을 입력하세요" /><br/>
+		<label for="first_name">이름</label>
+		<input type="text"
+			name="first_name"
+			id="first_name"
+			placeholder="이름을 입력하세요" /><br/>
+			
+		<input type="submit" value="전송" />
+		
+		<!-- Emailist(JSP) 버전 링크 -->
+		<h1>Emailist(JSP)</h1>
+		<a href="emaillist/">이메일리스트(JSP)</a>
+		
+		<!-- Emailist(Model 2) 버전 링크 -->
+		<h1>Emailist(Model 2)</h1>
+		<a href="el">이메일리스트(Model 2)</a>
+	</form>
+	
+	<h3>Cookie Test</h3>
+	<a href="cookies">쿠키 테스트</a>
+	<br/>
+	
+	<h3>Sesson Test</h3>
+	<ul>
+		<li><a href="Session/session_write.jsp">세션 저장 테스트</a></li>
+		<li><a href="Session/session_read.jsp">세션 읽기 테스트</a></li>
+		<li><a href="Session/session_invalidate.jsp">세션 무효화 테스트</a></li>
+	</ul>
+</body>
+</html>

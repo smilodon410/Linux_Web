@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>입력 양식 연습</title>
+</head>
+<body>
+	<!-- 서버로 데이터를 전송하려면 form 태그 -->
+	<!-- Method: 전송방식, action: 폼 처리할 페이지 주소 -->
+	<form method="post"
+		action="UserForm.html">
+		<label id="name">이름</label>
+		<!-- input tag -->
+		<input type="text"
+				id="name"
+				name="name"
+				placeholder="이름을 입력하세요" />
+		<br/>
+		<br/>
+		<label id="passwd">비밀번호</label>
+		<input type="password"
+				id="password"
+				name="password"
+				placeholder="비밀번호를 입력하세요" />
+		<br/>
+		<br/>
+		<!-- checkbox: 중복선택가능 -->
+		<label>선호 애완동물</label>
+		<input type="checkbox" name="pet" value="dog" />개
+		<input type="checkbox" name="pet" value="cat" />고양이
+		<input type="checkbox" name="pet" value="cow" />소
+		<br/>
+		<br/>
+		<!-- radio: 한개만 선택 -->
+		<label>성별</label>
+		<input type="radio" name="gender" value="Female" />여자
+		<input type="radio" name="gender" value="male" />남자
+		<br/>
+		<br/>
+		<label>사용통신사</label>
+		<!-- Dropdown -->
+		<select name="telecom">
+			<option value="S">SKT</option>
+			<option value="K">KT</option>
+			<option value="L">LGT</option>
+			<option value="E">기타</option>
+		</select>
+		<br/>
+		<br/>
+		<!-- 폼을 서버로 전송 -->
+		<input type="submit" value="전송" />
+		<input type="reset" value="다시 작성" />
+	</form>
+	<br/>
+	<a href="index.html">처음으로</a>
+</body>
+</html>
