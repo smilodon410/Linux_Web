@@ -8,7 +8,7 @@
   <packaging>war</packaging>
   
   <build>
-    <finalName>ROOT.war</finalName>
+    <finalName>ROOT</finalName>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
       <plugin>
